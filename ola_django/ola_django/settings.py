@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-^e0pqq=18)gar_mb(5c%57fr)-szw7#+1v$2rdea6z3!=w#t@='
+SECRET_KEY = 'django-insecure-oiphnq5@kyw57!wu=lbv(psjns9k880mr#kms7+cv3dwte*$2@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -78,10 +78,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'oladjango',
-        'USER': 'root',
-        'PASSWORD': 'admin',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'USER': 'root',        # Substitua pelo seu usuário MySQL
+        'PASSWORD': 'admin',      # Substitua pela sua senha MySQL
+        'HOST': 'localhost',                # Ou o endereço do seu servidor MySQL
+        'PORT': '3306',                     # A porta padrão do MySQL'
     }
 }
 
