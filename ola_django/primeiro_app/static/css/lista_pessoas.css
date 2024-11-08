@@ -1,0 +1,63 @@
+body{
+    background-image: linear-gradient(to bottom,rgb(102, 8, 164) ,rgb(19, 3, 34));
+    background-attachment:fixed;
+    place-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.corpo{
+    margin-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    background-color: #b198c22d;
+    width: 80vw;
+    border-radius: 20px;
+}
+
+div.corpo h1{
+    padding: 10px;
+    margin: 0;
+}
+
+table{
+    width: 80vw;
+}
+
+thead th{
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+
+
+
+tbody tr{
+    color: rgb(26, 11, 39);
+    transition: 0.3s;
+    border-radius: 10px;
+}
+tbody tr:hover{
+    background-color: rgba(26, 11, 39, 0.1);
+}
+
+tbody tr td{
+    width: 100vw;
+    color: rgb(26, 11, 39);
+}
+
+div.infos td:hover{
+    cursor: default;
+}
+
+tbody  a i{
+    color: rgb(26, 11, 39);
+    padding: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+tbody a i:hover{
+    opacity: 0.5;
+    color: rgb(235, 235, 235);
+}
