@@ -40,6 +40,7 @@ tbody tr{
 }
 tbody tr:hover{
     background-color: rgba(26, 11, 39, 0.1);
+    cursor: default;
 }
 
 tbody tr td{
@@ -47,9 +48,6 @@ tbody tr td{
     color: rgb(26, 11, 39);
 }
 
-div.infos td:hover{
-    cursor: default;
-}
 
 tbody  a i{
     color: rgb(26, 11, 39);
@@ -58,6 +56,19 @@ tbody  a i{
     transition: 0.3s;
 }
 tbody a i:hover{
+    opacity: 0.5;
+    color: rgb(235, 235, 235);
+}
+
+div.plus a i{
+    margin-top: 50px;
+    color: rgb(26, 11, 39);
+    padding: 5px;
+    font-size: 35px;
+    transition: 0.3s;
+}
+
+div.plus a i:hover{
     opacity: 0.5;
     color: rgb(235, 235, 235);
 }
