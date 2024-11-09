@@ -7,12 +7,13 @@ body{
 
 div.corpo{
     margin-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     text-align: center;
     align-items: center;
     background-color: #b198c22d;
     width: 80vw;
     border-radius: 20px;
+    padding-bottom: 15px;
 }
 
 div.corpo h1{
@@ -24,15 +25,18 @@ table{
     width: 80vw;
 }
 
+
+
+/*Nome das colunas*/
 thead th{
     text-align: center;
     font-size: 15px;
-    padding-bottom: 5px;
+    padding: 10px;
 }
 
 
 
-
+/*Infos do Banco de Dados*/
 tbody tr{
     color: rgb(26, 11, 39);
     transition: 0.3s;
@@ -49,6 +53,8 @@ tbody tr td{
 }
 
 
+
+/*Botões de ações*/
 tbody  a i{
     color: rgb(26, 11, 39);
     padding: 5px;
@@ -60,15 +66,29 @@ tbody a i:hover{
     color: rgb(235, 235, 235);
 }
 
+
+
+/*Botão de cadastrar pessoa*/
+div.plus{
+    margin-top: 20px;
+    background-color: #b198c22d;
+    border-radius: 200px;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    transition: 0.3s;
+}
 div.plus a i{
-    margin-top: 50px;
     color: rgb(26, 11, 39);
-    padding: 5px;
-    font-size: 35px;
+    font-size: 40px;
     transition: 0.3s;
 }
 
+div.plus:active{
+    opacity: 0.7;
+}
 div.plus a i:hover{
     opacity: 0.5;
     color: rgb(235, 235, 235);
+    cursor: pointer;
 }
