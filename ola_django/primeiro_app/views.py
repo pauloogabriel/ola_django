@@ -2,8 +2,8 @@ from django.forms import BaseModelForm
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.views.generic import CreateView, ListView, UpdateView, DetailView, DeleteView
-from .models import Pessoa, InteracoesPessoa, CategoriaDespesas
-from .forms import PessoaCreateForm, PessoaUpdateForm,FormDeletePessoa, CategoriaDespesasForm, FormDeleteCategorias, CategoriaUpdateForm
+from .models import Pessoa, InteracoesPessoa, CategoriaDespesas,SelecionarCategoriaPre
+from .forms import PessoaCreateForm, PessoaUpdateForm,FormDeletePessoa, CategoriaDespesasForm, FormDeleteCategorias, CategoriaUpdateForm,FormSelecionarCategorias
 from .forms import CategoriaUpdateForm, PessoaCreateForm, PessoaUpdateForm,FormDeletePessoa, CategoriaDespesasForm
 from django.urls import reverse_lazy
 from django.contrib import messages
@@ -120,4 +120,11 @@ class CategoriaDeleteView(DeleteView):
       model=CategoriaDespesas
       form_class=FormDeleteCategorias
       template_name='deletar_categoria.html'
+      success_url=reverse_lazy('listar_categorias')
+
+
+class SelecionarCategoriasView(CreateView): 
+      model=CategoriaDespesas
+      form_class=FormSelecionarCategorias
+      template_name='selecionar_categoria.html'
       success_url=reverse_lazy('listar_categorias')

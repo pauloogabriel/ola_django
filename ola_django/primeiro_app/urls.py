@@ -1,7 +1,7 @@
 from django.urls import path
 from django.http import HttpResponse
 from .views import PessoaCreateView, PessoaListView, PessoaUpdateView, PessoaDetailView, PessoaDeleteView, CategoriaCreateView, CategoriaDeleteView, CategoriaListView, CategoriaUpdateView, CategoriaDetailView
-from .views import CategoriaDetailView, CategoriaListView, CategoriaUpdateView, PessoaCreateView, PessoaListView, PessoaUpdateView, PessoaDetailView, PessoaDeleteView, CategoriaCreateView
+from .views import CategoriaDetailView, CategoriaListView, CategoriaUpdateView, PessoaCreateView, PessoaListView, PessoaUpdateView, PessoaDetailView, PessoaDeleteView, CategoriaCreateView,SelecionarCategoriasView
 from .views import CategoriaDetailView, CategoriaListView, CategoriaUpdateView, PessoaCreateView, PessoaListView, PessoaUpdateView, PessoaDetailView, PessoaDeleteView, CategoriaCreateView
 
 def oiDjango(request):
@@ -23,4 +23,6 @@ urlpatterns=[
     path('listar_categorias/', CategoriaListView.as_view(), name='listar_categorias'),
     path('deletar_categoria/<int:pk>/', CategoriaDeleteView.as_view(), name='deletar_categoria'),
     path('cadastrar_categoria/', CategoriaCreateView.as_view(), name='cadastrar_categoria'),
+    path('selecionar_categoria/', SelecionarCategoriasView.as_view(), name='selecionar_categoria'),
+
 ]

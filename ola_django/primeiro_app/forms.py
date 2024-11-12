@@ -1,7 +1,13 @@
 from django import forms
-from .models import Pessoa, CategoriaDespesas
+from .models import Pessoa, CategoriaDespesas, SelecionarCategoriaPre
 
 class PessoaCreateForm(forms.ModelForm):
+    categorias=forms.ModelChoiceField(
+        queryset=CategoriaDespesas.objects.all(),
+        initial=CategoriaDespesas.objects.first(),
+        label='Categoria Despesas'
+    )
+    
     interacao=forms.CharField(widget=forms.Textarea)
     class Meta:
         model= Pessoa
@@ -38,3 +44,16 @@ class FormDeleteCategorias(forms.ModelForm):
     class Meta:
         model=CategoriaDespesas
         fields=[]
+        
+class FormSelecionarCategorias(forms.ModelForm):
+    categorias=forms.ModelChoiceField(
+        queryset=CategoriaDespesas.objects.all(),
+        initial=CategoriaDespesas.objects.first(),
+        label='Categoria Despesas'
+        
+    )
+    
+    class Meta:
+        model=CategoriaDespesas
+        fields=[]   
+        

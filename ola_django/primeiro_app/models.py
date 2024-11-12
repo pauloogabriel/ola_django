@@ -28,3 +28,11 @@ class CategoriaDespesas(models.Model):
     
     def __str__(self):
         return self.name
+    
+    
+class CategoriaPredefinida(models.Model):
+    nome= models.CharField(max_length=30)    
+    
+    
+class SelecionarCategoriaPre(models.Model): 
+    CategoriaPredefinida=models.ForeignKey("CategoriaPredefinida", on_delete=models.CASCADE)

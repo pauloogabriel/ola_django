@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     </head>
     <body>
-        <h1>Cadastrar nova categoria</h1>
+        <h1>Selecionar Categoria</h1>
 
         <form method="post">
             {% csrf_token %}
@@ -15,8 +15,6 @@
             <button type="submit">Cadastrar</button>
         </form>
 
-        <a href="{% url 'listar_categorias' %}">Voltar</a>
-        <a href="{% url 'selecionar_categoria' %}">Selecionar categorias pré definidas</a>
-
+        <a href="{% url 'cadastrar_categoria' %}">Voltar</a>
     </body>
 </html>
