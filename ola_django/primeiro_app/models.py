@@ -27,7 +27,7 @@ class CategoriaDespesas(models.Model):
     descricao = models.TextField()
     
     def __str__(self):
-        return self.name
+        return self.nome
     
     
 class CategoriaPredefinida(models.Model):
