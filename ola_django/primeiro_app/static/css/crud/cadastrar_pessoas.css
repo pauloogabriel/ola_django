@@ -1,8 +1,8 @@
 body{
-    background-image: linear-gradient(to bottom,rgb(102, 8, 164) ,rgb(19, 3, 34));
-    background-attachment:fixed;
+    background: black;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    color: rgba(235, 235, 235,0.7);
 }
 
 div.novaPessoa{
@@ -17,7 +17,7 @@ div.cadastraNovaPessoa{
     display: block;
     width: 32vw;
     text-align: center;
-    background-color: rgba(177, 152, 194, 0.176);
+    background-color: #6608A4;
     border-radius: 20px;
 }
 
@@ -26,6 +26,7 @@ label{
     font-size: 16px;
     font-weight: bold;
     transition: 0.3s;
+    margin-bottom: 5px;
 }
 input, select{
     border-radius: 20px;
@@ -33,7 +34,7 @@ input, select{
     width: 25vw;
     height: 22px;
     border: none;
-    background-color: rgba(177, 152, 194, 0.3);
+    background-color: rgba(129, 94, 153, 0.5);
     transition: 0.3s;
 }  
 
@@ -47,7 +48,7 @@ textarea{
     text-align: center;
     border: none;
     resize: none;
-    background-color: rgba(177, 152, 194, 0.3);
+    background-color: rgba(129, 94, 153, 0.5);  
     transition: 0.3s;
 }
 
@@ -58,7 +59,7 @@ select:active, input:active, textarea:active{
 a, button{
     font-size: 25px;
     margin: 0px auto 10px auto;
-    color: rgb(26, 11, 39);
+    color: rgba(235, 235, 235,0.7);
     font-weight: bold;
     transition: 0.3s;
 }
@@ -73,7 +74,7 @@ button{
 }
 
 a:hover, button:hover{
-    color: rgb(235, 235, 235);
+    color: #DAA520;
     cursor: pointer;
     opacity: 0.5;
 }
