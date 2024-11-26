@@ -53,7 +53,7 @@ tbody tr td{
 }
 tbody tr td:hover{
     color: #DAA520;
-    
+    width: 100vw;
 }
 
 
